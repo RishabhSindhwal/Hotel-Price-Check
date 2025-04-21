@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OceanView Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <h1>🌊 OceanView</h1>
+      <ul>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <h2>Luxury Redefined</h2>
+      <p>Experience comfort with ocean views</p>
+    </div>
+  </header>
+
+  <section id="rooms" class="rooms-section">
+    <h2>🏨 Our Rooms</h2>
+    <div class="room-filters">
+      <select id="filterType">
+        <option value="all">All Types</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="suite">Suite</option>
+      </select>
+      <input type="range" id="priceRange" min="50" max="500" value="500">
+      <span id="priceValue">$500</span>
+    </div>
+    <div id="roomsContainer" class="rooms-container"></div>
+  </section>
+
+  <section id="booking" class="booking-section">
+    <h2>📝 Book a Room</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="date" id="checkin" required />
+      <input type="date" id="checkout" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+
+  <footer id="contact">
+    <p>📍 123 Ocean Drive, Maldives | 📞 +123-456-789</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
